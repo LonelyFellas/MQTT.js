@@ -86,7 +86,8 @@
 	"author": {
 		"name": "Darwish",
 		"email": "259083120@qq.com",
-		"url": "https://github.com/LonelyFellas"
+		"url": "https://github.com/LonelyFellas",
+		"homepage": "https://github.com/LonelyFellas"
 	},
 	"browser": {
 		"./mqtt.js": "./dist/mqtt.js",

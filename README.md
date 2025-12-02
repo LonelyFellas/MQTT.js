@@ -5,7 +5,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/mqttjs/MQTT.js/graphs/commit-activity)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/mqttjs/MQTT.js/pulls)
 
-[![node](https://img.shields.io/node/v/mqtt.svg) ![npm](https://img.shields.io/npm/v/mqtt.svg?logo=npm)](https://www.npmjs.com/package/mqtt)
+[![node](https://img.shields.io/node/v/mqtt.svg) ![npm](https://img.shields.io/npm/v/mqtt.svg?logo=npm)](https://www.npmjs.com/package/@darwish/mqtt)
 [![NPM Downloads](https://img.shields.io/npm/dm/mqtt.svg)](https://npm-compare.com/mqtt/#timeRange=THREE_YEARS)
 
 MQTT.js is a client library for the [MQTT](http://mqtt.org/) protocol, written
@@ -85,7 +85,7 @@ deprecated, as such, it is not documented in this README.
 ## Installation
 
 ```sh
-npm install mqtt --save
+npm install @darwish/mqtt --save
 ```
 
 <a name="example"></a>
@@ -95,7 +95,7 @@ npm install mqtt --save
 For the sake of simplicity, let's put the subscriber and the publisher in the same file:
 
 ```js
-const mqtt = require("mqtt");
+const mqtt = require("@darwish/mqtt");
 const client = mqtt.connect("mqtt://test.mosquitto.org");
 
 client.on("connect", () => {
@@ -141,7 +141,7 @@ If you do not want to install a separate broker, you can try using the
 ### CommonJS (Require)
 
 ```js
-const mqtt = require("mqtt")  // require mqtt
+const mqtt = require("@darwish/mqtt")  // require @darwish/mqtt
 const client = mqtt.connect("mqtt://test.mosquitto.org")  // create a client
 ```
 
@@ -150,14 +150,14 @@ const client = mqtt.connect("mqtt://test.mosquitto.org")  // create a client
 #### Default import
 
 ```js
-import mqtt from "mqtt"; // import namespace "mqtt"
+import mqtt from "@darwish/mqtt"; // import namespace "mqtt"
 let client = mqtt.connect("mqtt://test.mosquitto.org"); // create a client
 ```
 
 #### Importing individual components
 
 ```js
-import { connect } from "mqtt"; // import connect from mqtt
+import { connect } from "@darwish/mqtt"; // import connect from mqtt
 let client = connect("mqtt://test.mosquitto.org"); // create a client
 ```
 
